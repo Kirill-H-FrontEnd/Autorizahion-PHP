@@ -20,20 +20,20 @@ validateSecond
     {
       rule: "email",
     },
-    // {
-    //   validator: (value) => () => {
-    //     return fetch(
-    //       "validate-emailSignIn.php?email=" + encodeURIComponent(value)
-    //     )
-    //       .then(function (response) {
-    //         return response.json();
-    //       })
-    //       .then(function (json) {
-    //         return json.available;
-    //       });
-    //   },
-    //   errorMessage: "Email does not exist",
-    // },
+    {
+      validator: (value) => () => {
+        return fetch(
+          "validate-email-SignIn.php?email=" + encodeURIComponent(value)
+        )
+          .then(function (response) {
+            return response.json();
+          })
+          .then(function (json) {
+            return json.available;
+          });
+      },
+      errorMessage: "Email does not exist",
+    },
   ])
   .addField("#inp-pass1", [
     {

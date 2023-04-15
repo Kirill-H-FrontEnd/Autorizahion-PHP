@@ -28,8 +28,8 @@ if (isset($_SESSION["user_id"])) {
     <?php else : ?>
         <div class="home">
             <h1>Welcome!</h1>
-            <p>Your have an account? <a href="/signin.php">SignIn</a></p>
-            <p>You don't have an account? <a href="/signup.php">SignUp</a></p>
+            <p>Your have an account? <a href="/Source/signin.php">SignIn</a></p>
+            <p>You don't have an account? <a href="/Source/signup.php">SignUp</a></p>
         </div>
     <?php endif; ?>
 </body>

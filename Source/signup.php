@@ -16,7 +16,7 @@
 <body>
     <div class="form-wrapper">
         <!-- Signup -->
-        <form id="form-signup" action="/Source/signup-process.php" method="POST">
+        <form id="form-signup" action="./signup-process.php" method="POST">
             <h2>Sign Up</h2>
             <div class="block-input">
                 <input id="inp-login" type="text" name="login" placeholder="Login"><br>

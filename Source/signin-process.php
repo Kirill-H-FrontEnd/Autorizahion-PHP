@@ -19,7 +19,7 @@ if (($_SERVER["REQUEST_METHOD"] ?? 'GET') == 'POST') {
     } else {
       session_start();
       $_SESSION["error_pass"] = 'error password!';
-      header("Location:../signin.php");
+      header("Location:signin.php");
       exit();
     }
   }

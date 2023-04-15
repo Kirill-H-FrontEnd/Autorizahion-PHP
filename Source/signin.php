@@ -1,6 +1,6 @@
 <?php
 session_start();
-require __DIR__ . '/Source/signin-process.php';
+require __DIR__ . '/signin-process.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +20,7 @@ require __DIR__ . '/Source/signin-process.php';
 <body>
     <!-- Signin -->
     <div class="form-wrapper">
-        <form id="form-signin" action="/Source/signin-process.php" method="POST">
+        <form id="form-signin" action="./signin-process.php" method="POST">
             <h2>Sign In</h2>
 
             <div class="block-input">

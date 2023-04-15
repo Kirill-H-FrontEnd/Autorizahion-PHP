@@ -32,7 +32,7 @@ if (!$stmt->prepare($sql)) {
 $stmt->bind_param("sss", $_POST['login'], $_POST['email'], $pass_hash);
 
 if ($stmt->execute()) {
-    header("Location:../signin.php");
+    header("Location:./signin.php");
 } else {
     if ($mysqli->errno == 1062) {
         die("email alredy taken");

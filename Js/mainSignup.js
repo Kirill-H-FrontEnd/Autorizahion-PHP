@@ -38,7 +38,9 @@ validate.addField("#inp-login", [
   },
   {
     validator: (value) => () => {
-      return fetch("validate-login.php?login=" + encodeURIComponent(value))
+      return fetch(
+        "validate-login-SignUp.php?login=" + encodeURIComponent(value)
+      )
         .then(function (response) {
           return response.json();
         })
@@ -59,7 +61,9 @@ validate.addField("#inp-email", [
   },
   {
     validator: (value) => () => {
-      return fetch("validate-email.php?email=" + encodeURIComponent(value))
+      return fetch(
+        "validate-email-SignUp.php?email=" + encodeURIComponent(value)
+      )
         .then(function (response) {
           return response.json();
         })
