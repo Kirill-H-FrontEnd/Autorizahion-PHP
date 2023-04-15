@@ -23,8 +23,10 @@ if (isset($_SESSION["user_id"])) {
 
 <body>
     <?php if (isset($user)) : ?>
-        <p>Hello <?= htmlspecialchars($user['login']) ?></p>
-        <a href="/Source/logout.php">Logout</a>
+        <section class="intro">
+            <h1>Hello <span><?= htmlspecialchars($user['login']) ?></span>!</h1>
+            <a href="/Source/logout.php">Logout</a>
+        </section>
     <?php else : ?>
         <div class="home">
             <h1>Welcome!</h1>

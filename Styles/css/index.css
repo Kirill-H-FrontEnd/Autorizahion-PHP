@@ -1,10 +1,10 @@
 * {
-  box-sizing: 0;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
-  color: #9fa2c6;
+  color: #bacddb;
 }
 
 body {
@@ -14,6 +14,48 @@ body {
   height: 100vh;
   display: grid;
   place-items: center;
+}
+body .intro {
+  text-align: center;
+}
+body .intro h1 {
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+body .intro a {
+  width: 100%;
+  text-decoration: none;
+  border: 2px solid #bacddb;
+  padding: 10px 50px;
+  text-align: center;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+body .intro a:hover {
+  box-shadow: 0px 0px 10px rgba(186, 205, 219, 0.4);
+}
+body .successful {
+  text-align: center;
+}
+body .successful h1 {
+  font-size: 40px;
+  border: 2px solid #bacddb;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #68b984;
+}
+body .successful a {
+  font-size: 20px;
+  border: 2px solid #bacddb;
+  padding: 5px 30px;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #bacddb;
+  color: #24273d;
 }
 body .home {
   padding: 40px 20px;
@@ -25,14 +67,232 @@ body .home h1 {
   font-size: 50px;
   text-transform: uppercase;
   font-weight: 600;
+  margin-bottom: 10px;
 }
 body .home p {
+  border: 2px solid #bacddb;
+  border-radius: 5px;
+  padding: 10px 20px;
   font-size: 20px;
 }
 body .home p:nth-of-type(1) {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 body .home p a {
   color: white;
   text-decoration: none;
+}
+body .form-wrapper #form-signup,
+body .form-wrapper #form-signin {
+  padding: 40px 20px;
+  background-color: #24273d;
+  border-radius: 5px;
+  width: 350px;
+}
+body .form-wrapper #form-signup h2,
+body .form-wrapper #form-signin h2 {
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+body .form-wrapper #form-signup button,
+body .form-wrapper #form-signin button {
+  border: unset;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px 0px;
+  text-align: center;
+  color: #24273d;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: #bacddb;
+  margin: 10px 0px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+body .form-wrapper #form-signup button:hover,
+body .form-wrapper #form-signin button:hover {
+  background-color: #9fa2c6;
+  color: #303e58;
+}
+body .form-wrapper #form-signup pre,
+body .form-wrapper #form-signin pre {
+  font-weight: 400;
+  color: #303e58;
+}
+body .form-wrapper #form-signup pre a,
+body .form-wrapper #form-signin pre a {
+  text-decoration: none;
+  color: #bacddb;
+}
+body .form-wrapper #form-signup .block-input input,
+body .form-wrapper #form-signin .block-input input {
+  outline: none;
+  width: 100%;
+  padding: 10px 0px 10px 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  background-color: #303e58;
+  border: unset;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+body .form-wrapper #form-signup .block-input input::-moz-placeholder, body .form-wrapper #form-signin .block-input input::-moz-placeholder {
+  font-family: "Rubik", sans-serif;
+  color: #9fa2c6;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  opacity: 0.3;
+}
+body .form-wrapper #form-signup .block-input input::placeholder,
+body .form-wrapper #form-signin .block-input input::placeholder {
+  font-family: "Rubik", sans-serif;
+  color: #9fa2c6;
+  transition: all 0.2s ease;
+  opacity: 0.3;
+}
+body .form-wrapper #form-signup .block-input input:hover,
+body .form-wrapper #form-signin .block-input input:hover {
+  box-shadow: 0px 0px 5px rgba(159, 162, 198, 0.2);
+}
+body .form-wrapper #form-signup .block-input input:focus,
+body .form-wrapper #form-signin .block-input input:focus {
+  cursor: auto;
+}
+body .form-wrapper #form-signup .block-input input:focus::-moz-placeholder, body .form-wrapper #form-signin .block-input input:focus::-moz-placeholder {
+  transform: translate(20px, 0px);
+  opacity: 0;
+}
+body .form-wrapper #form-signup .block-input input:focus::placeholder,
+body .form-wrapper #form-signin .block-input input:focus::placeholder {
+  transform: translate(20px, 0px);
+  opacity: 0;
+}
+body .form-wrapper #form-signup .chekbox-1,
+body .form-wrapper #form-signin .chekbox-1 {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: start;
+  align-items: center;
+  margin: 10px 0px;
+}
+body .form-wrapper #form-signup .chekbox-1 span,
+body .form-wrapper #form-signin .chekbox-1 span {
+  margin-left: 10px;
+  color: #9fa2c6;
+  font-size: 14px;
+  opacity: 0.5;
+}
+body .form-wrapper #form-signup .chekbox-1 .toggle-pill-1 input[type=checkbox],
+body .form-wrapper #form-signin .chekbox-1 .toggle-pill-1 input[type=checkbox] {
+  display: none;
+}
+body .form-wrapper #form-signup .chekbox-1 .toggle-pill-1 input[type=checkbox] + label,
+body .form-wrapper #form-signin .chekbox-1 .toggle-pill-1 input[type=checkbox] + label {
+  display: block;
+  position: relative;
+  width: 3em;
+  height: 1.6em;
+  border-radius: 1em;
+  background: #303e58;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  transition: background 0.1s ease-in-out;
+}
+body .form-wrapper #form-signup .chekbox-1 .toggle-pill-1 input[type=checkbox] + label:before,
+body .form-wrapper #form-signin .chekbox-1 .toggle-pill-1 input[type=checkbox] + label:before {
+  content: "";
+  display: block;
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 1em;
+  background: #9fa2c6;
+  position: absolute;
+  left: 0.2em;
+  top: 0.2em;
+  transition: all 0.2s ease-in-out;
+  transform: rotate(90deg);
+}
+body .form-wrapper #form-signup .chekbox-1 .toggle-pill-1 input[type=checkbox]:checked + label:before,
+body .form-wrapper #form-signin .chekbox-1 .toggle-pill-1 input[type=checkbox]:checked + label:before {
+  background: #fc2947;
+  box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2);
+  left: 1.6em;
+  transform: rotate(295deg);
+}
+body .form-wrapper #form-signup .chekbox-2,
+body .form-wrapper #form-signin .chekbox-2 {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+body .form-wrapper #form-signup .chekbox-2 span,
+body .form-wrapper #form-signin .chekbox-2 span {
+  margin-left: 10px;
+  color: #9fa2c6;
+  font-size: 14px;
+  opacity: 0.5;
+}
+body .form-wrapper #form-signup .chekbox-2 .toggle-pill-2 input[type=checkbox],
+body .form-wrapper #form-signin .chekbox-2 .toggle-pill-2 input[type=checkbox] {
+  display: none;
+}
+body .form-wrapper #form-signup .chekbox-2 .toggle-pill-2 input[type=checkbox] + label,
+body .form-wrapper #form-signin .chekbox-2 .toggle-pill-2 input[type=checkbox] + label {
+  display: block;
+  position: relative;
+  width: 3em;
+  height: 1.6em;
+  border-radius: 1em;
+  background: #303e58;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  transition: background 0.1s ease-in-out;
+}
+body .form-wrapper #form-signup .chekbox-2 .toggle-pill-2 input[type=checkbox] + label:before,
+body .form-wrapper #form-signin .chekbox-2 .toggle-pill-2 input[type=checkbox] + label:before {
+  content: "";
+  display: block;
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 1em;
+  background: #9fa2c6;
+  position: absolute;
+  left: 0.2em;
+  top: 0.2em;
+  transition: all 0.2s ease-in-out;
+  transform: rotate(90deg);
+}
+body .form-wrapper #form-signup .chekbox-2 .toggle-pill-2 input[type=checkbox]:checked + label:before,
+body .form-wrapper #form-signin .chekbox-2 .toggle-pill-2 input[type=checkbox]:checked + label:before {
+  background: #fc2947;
+  box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2);
+  left: 1.6em;
+  transform: rotate(295deg);
+}
+
+@keyframes animText {
+  0% {
+    transform: scale(0.9, 0.9);
+  }
+  20% {
+    transform: scale(1, 1);
+  }
+  40% {
+    transform: scale(0.9, 0.9);
+  }
+  60% {
+    transform: scale(1, 1);
+  }
+  80% {
+    transform: scale(0.9, 0.9);
+  }
 }

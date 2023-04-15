@@ -12,6 +12,8 @@ require __DIR__ . '/signin-process.php';
     <title>SignIn</title>
     <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
     <script src="/Js/mainSignin.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Styles/css/index.css">
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/578abef626.js" crossorigin="anonymous"></script>
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2321/2321232.png">
@@ -22,7 +24,6 @@ require __DIR__ . '/signin-process.php';
     <div class="form-wrapper">
         <form id="form-signin" action="./signin-process.php" method="POST">
             <h2>Sign In</h2>
-
             <div class="block-input">
                 <input id="inp-email" value="<?= htmlspecialchars($_POST['email'] ?? "") ?>" type="text" name="email" placeholder="E-mail"><br>
             </div>
@@ -43,7 +44,7 @@ require __DIR__ . '/signin-process.php';
                 <span id="viewPass1">View password</span>
             </div>
             <button type="submit">Log-in</button>
-            <pre>You don't have an account?<a href="signup.php">Sign-up!</a></pre>
+            <pre>You don't have an account?<a href="signup.php"> Sign-up!</a></pre>
         </form>
     </div>
 </body>

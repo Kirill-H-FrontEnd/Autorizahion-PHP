@@ -8,6 +8,8 @@
     <title>SignUp</title>
     <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
     <script src="/Js/mainSignup.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Styles/css/index.css">
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/578abef626.js" crossorigin="anonymous"></script>
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2321/2321232.png">
@@ -38,7 +40,7 @@
                 <span id="viewPass2">View password</span>
             </div>
             <button name="button" type="submit">Create account</button>
-            <pre>You have an account?<a href="signin.php">Sign-in!</a></pre>
+            <pre>You have an account?<a href="signin.php"> Sign-in!</a></pre>
         </form>
     </div>
 </body>
