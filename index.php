@@ -24,7 +24,7 @@ if (isset($_SESSION["user_id"])) {
 <body>
     <?php if (isset($user)) : ?>
         <section class="intro">
-            <h1>Hello <span><?= htmlspecialchars($user['login']) ?></span>!</h1>
+            <h1>Hello <span><?= htmlspecialchars($user['login']) ?>!</span>!</h1>
             <a href="/Source/logout.php">Logout</a>
         </section>
     <?php else : ?>
