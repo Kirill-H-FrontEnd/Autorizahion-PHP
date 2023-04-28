@@ -1,6 +1,7 @@
 const inpPass1 = document.querySelector("#inp-pass1");
 const chekbox1 = document.querySelector("#pill1");
 const viewPass1 = document.querySelector("#viewPass1");
+
 chekbox1.addEventListener("click", () => {
   if (inpPass1.getAttribute("type") === "password") {
     inpPass1.setAttribute("type", "text");

@@ -24,7 +24,7 @@ if (($_SERVER["REQUEST_METHOD"] ?? 'GET') == 'POST') {
       exit();
     } else {
       session_start();
-      $_SESSION["error_pass"] = 'error password!';
+      $_SESSION["error_pass"] = 'Wrong password!';
       header("Location:signin.php");
       exit();
     }

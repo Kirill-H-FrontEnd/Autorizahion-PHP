@@ -15,6 +15,15 @@ body {
   display: grid;
   place-items: center;
 }
+body .just-validate-error-label {
+  font-size: 14px;
+  padding-bottom: 5px;
+  color: #fc2947 !important;
+  font-weight: 400;
+}
+body #error {
+  color: #fc2947;
+}
 body .intro {
   text-align: center;
 }
@@ -124,6 +133,10 @@ body .form-wrapper #form-signup pre a,
 body .form-wrapper #form-signin pre a {
   text-decoration: none;
   color: #bacddb;
+}
+body .form-wrapper #form-signup .block-input,
+body .form-wrapper #form-signin .block-input {
+  position: relative;
 }
 body .form-wrapper #form-signup .block-input input,
 body .form-wrapper #form-signin .block-input input {

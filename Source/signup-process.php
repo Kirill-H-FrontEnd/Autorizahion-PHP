@@ -56,7 +56,7 @@ if ($stmt->execute()) {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'Your email!';
+        $mail->Username   = 'Your email';
         $mail->Password   = 'yrqbphtxqqktghpo';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port = 465;
